@@ -1,1 +1,1 @@
-/*** index.js ***/
+import { HTMLCalendar } from './HTMLCalendar';  // eslint-disable-line

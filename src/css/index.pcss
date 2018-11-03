@@ -1,1 +1,64 @@
-/*** index.pcss ***/
+.htmlcalendar {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 380px;
+  border-top: 5px solid red;
+  border: 1px solid #000;
+   
+  & .month {
+    background: red;
+    text-align: center;
+    text-shadow: 2px 2px 8px #000;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 100%;
+    height: 40px;
+  }
+  
+  &[theme="rainbow"] {
+    & .month {
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, purple, pink);
+    }
+  }
+  
+  &[theme="minimalist"] {
+    border-color: grey;
+    & .month { background: grey; }
+
+    & .day {
+      border-color: grey;
+      border-radius: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  & .offset,
+  & .day {
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+    border: 1px solid transparent;
+    color: #666;
+  }
+
+  & .day {
+    border: 1px solid #555;
+  }
+
+  & .sunday {
+    font-weight: bold;
+    background: #ff9494;
+    border: 1px solid transparent;
+    color: red;
+  }
+
+  & .today {
+    background: steelblue;
+    color: white;
+  }
+}
