@@ -37,6 +37,7 @@
     "postcss-easy-import": "^3.0.0",
     "postcss-font-magician": "^2.2.1",
     "postcss-mixins": "^6.2.0",
+    "postcss-modules": "^1.4.1",
     "postcss-preset-env": "^6.0.7",
     "postcss-sorting": "^4.0.0",
     "stylelint": "^9.6.0",

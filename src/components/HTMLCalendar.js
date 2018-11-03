@@ -1,3 +1,5 @@
+import css from './HTMLCalendar.pcss';  // eslint-disable-line
+
 export default class HTMLCalendar extends HTMLElement {
   
   constructor() {
@@ -10,6 +12,7 @@ export default class HTMLCalendar extends HTMLElement {
     this.today = this.getAttribute('today') || new Date().getDate();        // Today number
 
     this.classList.add('htmlcalendar');
+
     this.createHeader();
     this.createOffset();
     this.createDays();
